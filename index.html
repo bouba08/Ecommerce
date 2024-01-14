@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="about.js"></script>
+    <script src="products.js" defer></script>
+    <script src="https://kit.fontawesome.com/14c6fcea77.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="../image/logo.png" alt="" class="nav-logo">
+            <div class="nav-links">
+                <a href="" class="nav-link">PRODUCTS</a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button class="nav-menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+    <nav class="menu">
+        <button class="menu-close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="menu-links">
+            <a href="#" class="menu-link" onclick="closeMenu()">Home</a>
+            <a href="#" class="menu-link" onclick="closeMenu()">Products</a>
+            <a href="#" class="menu-link" onclick="closeMenu()">Carts</a>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row header-row">
+                <h1 class="header-title">Welcome to <span class="color-primary">Samurai store</span></h1>
+                <div class="header-grid-container">
+                    <figure class="header-grid">
+                        <h2 class="header-grid-title">Live Comfortable</h2>
+                        <img src="../image/home-img-1.jpg" alt="" class="header-grid-img">
+                    </figure>
+                    <figure class="header-grid">
+                        <h2 class="header-grid-title">Skincare</h2>
+                        <img src="../image/home-img-2.jpg" alt="" class="header-grid-img">
+                    </figure>
+                    <figure class="header-grid">
+                        <h2 class="header-grid-title">Kitchen</h2>
+                        <img src="../image/home-img-3.jpg" alt="" class="header-grid-img">
+                    </figure>
+                    <figure class="header-grid">
+                        <h2 class="header-grid-title">Electronics</h2>
+                        <img src="../image/home-img-4.jpg" alt="" class="header-grid-img">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="products">
+            <div class="container">
+                <div class="row products-row">
+                    <h2 class="products-title">Products we are proud of</h2>
+                    <select class="products-header-filter" onchange="renderProducts()">
+                        <option
+                          value=""
+                          class="products__header__filter__option"
+                          selected
+                          disabled
+                        >
+                          All
+                        </option>
+                        <option
+                          value="Furniture"
+                          class="products__header__filter__option"
+                        >
+                          Furniture
+                        </option>
+                        <option
+                          value="Electronics"
+                          class="products__header__filter__option"
+                        >
+                          Electronics
+                        </option>
+                        <option value="Lamps" class="products__header__filter__option">
+                          Lamps
+                        </option>
+                        <option
+                          value="Kitchen"
+                          class="products__header__filter__option"
+                        >
+                          Kitchen
+                        </option>
+                        <option value="Chairs" class="products__header__filter__option">
+                          Chairs
+                        </option>
+                        <option
+                          value="Skin Care"
+                          class="products__header__filter__option"
+                        >
+                          Skin Care
+                        </option>
+                      </select>
+                    </div>
+        
+                    <div class="products-list" id="all-products-list">
+                        c
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="banner-1">
+            <div class="container">
+                <div class="row">
+                    <div class="banner">
+                        <div class="banner-text">
+                            <h2 class="banner-text-title">Creative Harmonious living</h2>
+                            <p class="banner-text-para">RAOUF Products are all made to standard sizes so that you can mix and match them freely</p>
+                            <button class="banner-text-btn">SHOP NOW</button>
+                        </div>
+                        <img src="../image/banner-1.jpg" alt="" class="banner-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="container">
+                <div class="row products-row">
+                    <h2 class="products-title">Trending Now</h2>
+                    <div class="products-list">
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/product-img.jpg" alt="" class="product-img">
+                            <div class="product-details">
+                                <h3>Black and White lamp </h3>
+                                <span class="product-details-price">£986</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="banner-2">
+            <div class="container">
+                <div class="row">
+                    <div class="banner banner-2">
+                        <div class="banner-text">
+                            <h2 class="banner-text-title">Comfortable and Elegante living</h2>
+                            <p class="banner-text-para">RAOUF Products are all made to standard sizes so that you can mix and match them freely</p>
+                            <button class="banner-text-btn">SHOP NOW</button>
+                        </div>
+                        <img src="../image/banner-2.jpg" alt="" class="banner-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="container">
+                <div class="row newsletter-row">
+                    <h2 class="newsletter-title">Newsletter</h2>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Enter Email Address" class="newsletter-form-input">
+                        <button class="newsletter-form-submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Store Locator</a>
+                <a href="#" class="footer-link">FAQs</a>
+                <a href="#" class="footer-link">News</a>
+                <a href="#" class="footer-link">Careers</a>
+                <a href="#" class="footer-link">Contact us</a>
+            </div>
+            <span class="footer-credit">Design by Abderraouf Rahmani</span>
+        </div>
+    </footer>
+</body>
+
+</html>
